@@ -1,6 +1,7 @@
 from behave import given, when, then
 from pages.dashboard import dashboard
 
+
 @then(u'Dashboard Status shows correct values for row "{row}"')
 def step_impl_dashboard_status(context, row):
     dashboard.verify_status(row)

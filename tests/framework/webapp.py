@@ -2,7 +2,8 @@ from selenium import webdriver
 from data.config import settings
 from urllib.parse import urljoin
 
-class WebApp():
+
+class WebApp:
     instance = None
 
     @classmethod
@@ -12,7 +13,10 @@ class WebApp():
         return cls.instance
 
     def __init__(self):
-        self.driver = webdriver.Chrome()
+        if str(settings['browser']).lower() is "firefox":
+            self.driver = webdriver.Firefox()
+        elif str(settings['browser']).lower() is "chrome":
+            self.driver = webdriver.Chrome()
 
     def get_driver(self):
         return self.driver
