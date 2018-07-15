@@ -11,18 +11,3 @@ def load_settings():
 
 
 load_settings()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
