@@ -1,5 +1,6 @@
 from framework.webapp import webapp
 
+
 class Dashboard():
     instance = None
 
@@ -15,7 +16,7 @@ class Dashboard():
     def verify_status(self, row):
         # Ex:
         # status = self.driver.find_element_by_id('dashboard-status-component').text
-        # asssert row in status, "{} not present in status component".format(row)
+        # assert row in status, "{} not present in status component".format(row)
         print('Verifying dashboard status..')
 
     def verify_refresh(self):
@@ -39,7 +40,7 @@ class Dashboard():
     def verify_gps_setting(self, row):
         # Ex:
         # status = self.driver.find_element_by_id('gps-setting-component').text
-        # asssert row in status, "{} not present in GPS component".format(row)
+        # assert row in status, "{} not present in GPS component".format(row)
         print('Verifying GPS setting..')
 
 
